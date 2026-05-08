@@ -2,7 +2,7 @@ import tkinter as tk
 from tkinter import messagebox
 import math
 
-class BasicCalculator:
+class EngineeringCalculator:
     def add(self, a, b): return a + b
     def subtract(self, a, b): return a - b
     def multiply(self, a, b): return a * b
@@ -93,7 +93,7 @@ class CalculatorApp:
                 messagebox.showinfo("Exit", "Thank you!")
                 self.root.destroy()
 
-    if __name__ == "__main__":
-        root = tk.Tk()
-        app = CalculatorApp(root)
-        root.mainloop()
+if __name__ == "__main__":
+    root = tk.Tk()
+    app = CalculatorApp(root)
+    root.mainloop()

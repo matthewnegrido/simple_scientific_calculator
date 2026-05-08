@@ -78,3 +78,10 @@ class CalculatorApp:
                     self.result_var.set(char)
                 else:
                     self.result_var.set(current_val + char)
+
+        except ZeroDivisionError:
+            messagebox.showerror("Error", "Cannot divide by zero!")
+            self.result_var.set("0")
+        except Exception as e:
+            messagebox.showerror("Error", f"Invalid Input: {e}")
+            self.result_var.set("0")

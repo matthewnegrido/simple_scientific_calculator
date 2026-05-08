@@ -10,3 +10,8 @@ class BasicCalculator:
         if b == 0:
             raise ZeroDivisionError("Cannot divide by zero!")
         return a / b
+
+    def derivative_at_point(self, val):
+        h = 0.000001
+        f = lambda x: x ** 2
+        return (f(val + h) - f(val)) / h

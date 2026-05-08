@@ -85,3 +85,15 @@ class CalculatorApp:
         except Exception as e:
             messagebox.showerror("Error", f"Invalid Input: {e}")
             self.result_var.set("0")
+
+        def ask_try_again(self):
+            # Fulfillment of Requirement #4 & #6
+            answer = messagebox.askyesno("Continue?", "Do you want to try another calculation?")
+            if not answer:
+                messagebox.showinfo("Exit", "Thank you!")
+                self.root.destroy()
+
+    if __name__ == "__main__":
+        root = tk.Tk()
+        app = CalculatorApp(root)
+        root.mainloop()

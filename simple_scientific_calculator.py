@@ -2,7 +2,6 @@ import tkinter as tk
 from tkinter import messagebox
 import math
 
-# --- OOP: Base Class (Encapsulation) ---
 class BasicCalculator:
     def add(self, a, b): return a + b
     def subtract(self, a, b): return a - b
